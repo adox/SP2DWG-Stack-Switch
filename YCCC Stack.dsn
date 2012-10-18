@@ -1,0 +1,264 @@
+(PCB "C:/Projekty/YCCC Stack/YCCC Stack.brd"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad CadSoft)
+    (host_version 'EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft')
+  )
+  (resolution mil 254)
+  (unit mil)
+  (structure
+    (layer "1#Top"  (type signal))
+    (layer "16#Bottom"  (type signal))
+    (boundary 
+      (rect pcb  0.000000 0.000000 3787.007874 2399.606299)
+    )
+    (boundary (path signal 0 0.000000 0.000000 3787.007874 0.000000))
+    (boundary (path signal 0 3787.007874 0.000000 3787.007874 2399.606299))
+    (boundary (path signal 0 3787.007874 2399.606299 0.000000 2399.606299))
+    (boundary (path signal 0 0.000000 2399.606299 0.000000 0.000000))
+    (via
+       "Round1$24.000000"
+       "Round5$125.984252"
+    )
+    (rule (width 10.000000)(clearance 8.000000))
+    (control
+      (via_at_smd on)
+    )
+  )
+  (placement
+    (place_control (flip_style rotate_first))
+    (component "C050-035X075$rcl" 
+      (place "C1" 3250.000000 900.000000 Front 180.000000)
+    )
+    (component "C050-035X075$rcl" 
+      (place "C2" 3250.000000 1250.000000 Front 180.000000)
+    )
+    (component "C050-035X075$rcl" 
+      (place "C3" 3250.000000 1600.000000 Front 180.000000)
+    )
+    (component "C050-035X075$rcl" 
+      (place "C4" 3250.000000 1950.000000 Front 180.000000)
+    )
+    (component "DO35-7$diode" 
+      (place "D1" 3300.000000 700.000000 Front 0.000000)
+    )
+    (component "DO35-7$diode" 
+      (place "D2" 3300.000000 1050.000000 Front 0.000000)
+    )
+    (component "DO35-7$diode" 
+      (place "D3" 3300.000000 1400.000000 Front 0.000000)
+    )
+    (component "DO35-7$diode" 
+      (place "D4" 3300.000000 1750.000000 Front 0.000000)
+    )
+    (component "BNC_MSZ$various" 
+      (place "J1" 650.000000 2250.000000 Front 180.000000)
+    )
+    (component "BNC_MSZ$various" 
+      (place "J2" 1400.000000 2250.000000 Front 180.000000)
+    )
+    (component "BNC_MSZ$various" 
+      (place "J3" 2150.000000 2250.000000 Front 180.000000)
+    )
+    (component "BNC_MSZ$various" 
+      (place "J4" 2900.000000 2250.000000 Front 180.000000)
+    )
+    (component "1X06$pinhead" 
+      (place "JP1" 3600.000000 1200.000000 Front 90.000000)
+    )
+    (component "G2RE$relay" 
+      (place "K1" 550.000000 1000.000000 Front 90.000000)
+    )
+    (component "G2RE$relay" 
+      (place "K2" 1300.000000 1000.000000 Front 90.000000)
+    )
+    (component "G2RE$relay" 
+      (place "K3" 2050.000000 1000.000000 Front 90.000000)
+    )
+    (component "G2RE$relay" 
+      (place "K4" 2800.000000 1000.000000 Front 90.000000)
+    )
+    (component "COIL_MSZ$various" 
+      (place "T1" 1350.000000 350.000000 Front 0.000000)
+    )
+  )
+  (library
+    (image "DO35-7$diode"
+      (outline(rect "1#Top" -75.000000 -40.000000 -55.000000 40.000000))
+      (outline(rect "1#Top" 90.000000 -10.000000 115.000000 10.000000))
+      (outline(rect "1#Top" -115.000000 -10.000000 -90.000000 10.000000))
+      (pin "Oblong1" "A" 150.000000 0.000000)
+      (pin "Oblong1" "C" -150.000000 0.000000)
+    )
+    (image "1X06$pinhead"
+      (pin "Round2" "1" -250.000000 0.000000)
+      (pin "Round2" "2" -150.000000 0.000000)
+      (pin "Round2" "3" -50.000000 0.000000)
+      (pin "Round2" "4" 50.000000 0.000000)
+      (pin "Round2" "5" 150.000000 0.000000)
+      (pin "Round2" "6" 250.000000 0.000000)
+    )
+    (image "C050-035X075$rcl"
+      (pin "Octagon1" "1" -100.000000 0.000000)
+      (pin "Octagon1" "2" 100.000000 0.000000)
+    )
+    (image "G2RE$relay"
+      (outline(circ "1#Top" 10.000000 885.000000 2.000000))
+      (outline(circ "1#Top" 10.000000 690.000000 -50.000000))
+      (outline(circ "1#Top" 10.000000 490.000000 2.000000))
+      (pin "Oblong2" "1" -100.000000 -145.000000)
+      (pin "Oblong2" "2" -100.000000 150.000000)
+      (pin "Oblong2" "O0" 491.000000 -145.000000)
+      (pin "Oblong2" "O1" 491.000000 150.000000)
+      (pin "Oblong2" "P0" 687.000000 -145.000000)
+      (pin "Oblong2" "P1" 687.000000 150.000000)
+      (pin "Oblong2" "S0" 884.000000 -145.000000)
+      (pin "Oblong2" "S1" 884.000000 150.000000)
+    )
+    (image "BNC_MSZ$various"
+      (pin "Square1" "P$1" 0.000000 0.000000)
+      (pin "Round3" "P$2" 200.000000 0.000000)
+    )
+    (image "COIL_MSZ$various"
+      (pin "Round4" "1" 0.000000 0.000000)
+      (pin "Round4" "2" 300.000000 150.000000)
+      (pin "Round4" "3" 600.000000 0.000000)
+    )
+    (padstack "ViaDefault$24.000000"
+      (shape (circle signal 40.000000 0 0))
+    )
+    (padstack "Round1$24.000000" 
+      (shape (circle "1#Top" 40.000000 0 0))
+      (shape (circle "16#Bottom" 40.000000 0 0))
+      (attach off)
+    )
+    (padstack "Oblong1" 
+      (shape (path signal 52.000000 -26.000000 0.000000 26.000000 0.000000))
+      (attach off)
+    )
+    (padstack "Round2" 
+      (shape (circle signal 64.960630 0 0))
+      (attach off)
+    )
+    (padstack "Octagon1" 
+      (shape (polygon "1#Top" 0 26.000000 10.769551 10.769551 26.000000 -10.769551 26.000000 -26.000000 10.769551 -26.000000 -10.769551 -10.769551 -26.000000 10.769551 -26.000000 26.000000 -10.769551 ))
+      (shape (polygon "16#Bottom" 0 26.000000 10.769551 10.769551 26.000000 -10.769551 26.000000 -26.000000 10.769551 -26.000000 -10.769551 -10.769551 -26.000000 10.769551 -26.000000 26.000000 -10.769551 ))
+      (attach off)
+    )
+    (padstack "Oblong2" 
+      (shape (path signal 78.000000 0.000000 -39.000000 0.000000 39.000000))
+      (attach off)
+    )
+    (padstack "Square1" 
+      (shape (rect signal -47.244094 -47.244094 47.244094 47.244094))
+      (attach off)
+    )
+    (padstack "Round3" 
+      (shape (circle signal 94.488189 0 0))
+      (attach off)
+    )
+    (padstack "Round4" 
+      (shape (circle signal 126.614173 0 0))
+      (attach off)
+    )
+    (padstack "Round5$125.984252" 
+      (shape (circle "1#Top" 165.984252 0 0))
+      (shape (circle "16#Bottom" 165.984252 0 0))
+      (attach off)
+    )
+  )
+  (network
+    (net "AGND"
+      (pins  "T1"-"3" "J1"-"P$1" "J2"-"P$1" "J3"-"P$1" "J4"-"P$1")
+    )
+    (net "GND"
+      (pins  "K1"-"1" "D1"-"A" "C1"-"2" "K2"-"1" "D2"-"A" "C2"-"2" "K3"-"1" "D3"-"A" "C3"-"2" "K4"-"1" "D4"-"A" "C4"-"2" "JP1"-"6")
+    )
+    (net "N$1"
+      (pins  "K1"-"2" "D1"-"C" "C1"-"1" "JP1"-"1")
+    )
+    (net "N$2"
+      (pins  "K1"-"P1" "K1"-"P0" "J1"-"P$2")
+    )
+    (net "N$3"
+      (pins  "K2"-"2" "D2"-"C" "C2"-"1" "JP1"-"2")
+    )
+    (net "N$4"
+      (pins  "K2"-"P1" "K2"-"P0" "J2"-"P$2")
+    )
+    (net "N$5"
+      (pins  "K3"-"2" "D3"-"C" "C3"-"1" "JP1"-"3")
+    )
+    (net "N$6"
+      (pins  "K3"-"P1" "K3"-"P0" "J3"-"P$2")
+    )
+    (net "N$7"
+      (pins  "K4"-"2" "D4"-"C" "C4"-"1" "JP1"-"4")
+    )
+    (net "N$8"
+      (pins  "K4"-"P1" "K4"-"P0" "J4"-"P$2")
+    )
+    (net "N$9"
+      (pins )
+    )
+    (net "N$10"
+      (pins )
+    )
+    (net "N$11"
+      (pins  "K4"-"S0" "K4"-"S1" "K3"-"S0" "K3"-"S1" "K1"-"S0" "K1"-"S1" "K2"-"S1" "K2"-"S0")
+    )
+    (net "N$12"
+      (pins  "T1"-"1" "K1"-"O0" "K1"-"O1")
+    )
+    (net "N$13"
+      (pins  "K2"-"O0" "K4"-"O0" "K4"-"O1" "K3"-"O0" "K3"-"O1" "K2"-"O1" "T1"-"2")
+    )
+    (net "N$14"
+      (pins )
+    )
+    (net "N$15"
+      (pins )
+    )
+    (class "default"
+       "GND" "N$1" "N$3" "N$5" "N$7" "N$9" "N$10" "N$14" "N$15"
+      (rule
+        (width 31.496063)
+        (clearance 15.748031)
+      )
+    )
+    (class "POWER"
+       "AGND" "N$2" "N$4" "N$6" "N$8" "N$11" "N$12" "N$13"
+      (rule
+        (width 118.110236)
+        (clearance 39.370079)
+      )
+    )
+  )
+  (wiring
+    (wire
+      (poly "16#Bottom"  16.000000 0.000000 2400.000000 0.000000 0.000000 3800.000000 0.000000 3800.000000 2400.000000) 
+      (net "AGND")
+    )
+    (wire
+      (poly "1#Top"  16.000000 0.000000 2400.000000 0.000000 0.000000 3800.000000 0.000000 3800.000000 2400.000000) 
+      (net "AGND")
+    )
+    (via
+      "Round5$125.984252" 200.000000 2250.000000
+      (net "N$9")
+    )
+    (via
+      "Round5$125.984252" 200.000000 150.000000
+      (net "N$10")
+    )
+    (via
+      "Round5$125.984252" 3600.000000 150.000000
+      (net "N$14")
+    )
+    (via
+      "Round5$125.984252" 3600.000000 2250.000000
+      (net "N$15")
+    )
+  )
+)
